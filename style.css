@@ -1,6 +1,9 @@
-body {
+html, body {
   margin: 0;
-  font-family: 'Georgia', serif;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
   background-color: #0b1c2c;
   color: #fff;
 }
@@ -72,6 +75,12 @@ nav {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-
-
-
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
