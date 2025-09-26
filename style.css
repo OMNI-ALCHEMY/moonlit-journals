@@ -54,3 +54,16 @@ nav {
   font-family: 'Helvetica', sans-serif;
   text-transform: uppercase;
 }
+
+/* Coming Soon image styling */
+.coming-soon {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.coming-soon img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
