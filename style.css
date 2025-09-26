@@ -66,13 +66,11 @@ nav {
 }
 
 .coming-soon img {
-  width: 400px;
-  max-width: 90%;
+  max-width: 400px;
+  width: 90%;
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
 .page-wrapper {
@@ -84,4 +82,5 @@ nav {
   padding: 2rem;
   box-sizing: border-box;
 }
+
 
