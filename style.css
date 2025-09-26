@@ -58,14 +58,20 @@ nav {
 /* Coming Soon image styling */
 .coming-soon {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  padding: 1rem;
 }
 
 .coming-soon img {
-  max-width: 600px;
-  height: 45%;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
+
+
 
 
