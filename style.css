@@ -37,6 +37,15 @@ header {
   color: #406d6d;
 }
 
+.legacy-note {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 /* 🌠 Coming Soon Image
    Centered and responsive for visual storytelling. */
 .coming-soon img {
