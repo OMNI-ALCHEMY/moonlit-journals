@@ -33,6 +33,7 @@ header {
 }
 
 .tagline {
+  font-family: 'Great Vibes', cursive;
   font-size: 1.2em;
   color: #406d6d;
 }
@@ -44,6 +45,10 @@ header {
   text-align: center;
   margin-top: 0.5rem;
   font-style: italic;
+}
+
+.nav-menu li a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* 🌠 Coming Soon Image
