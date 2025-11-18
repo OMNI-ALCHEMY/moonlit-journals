@@ -1,86 +1,110 @@
-html, body {
+/* 🌿 Base Reset & Body Ritual
+   This sets the emotional tone for your entire site — calm, readable, and mythic. */
+body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  overflow: hidden;
-  font-family: 'Lato', sans-serif;
-  background-color: #0b1c2c;
-  color: #fff;
+  font-family: 'Lora', serif; /* Reflective and warm for journal body text */
+  font-size: 1em;
+  line-height: 1.6; /* Increased for accessibility and emotional spaciousness */
+  color: #333;
+  background-color: #fdfdfd;
 }
 
+/* 🧱 Page Wrapper
+   Contains all content and centers it like a sacred container. */
+.page-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 🌕 Header & Brand Identity
+   Cinzel anchors your mythic brand name and tagline. */
 header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 40px 20px 20px;
 }
 
 .logo {
-  font-size: 2.5rem;
-  letter-spacing: 2px;
-}
-
-.overlap {
-  position: relative;
-  left: -10px;
-  color: #ffd700; /* golden moon glow */
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 2.5em;
+  color: #1d314f;
+  margin-bottom: 10px;
 }
 
 .tagline {
-  font-size: 1.2rem;
-  font-family: 'Helvetica', sans-serif;
-  margin-top: 0.5rem;
+  font-size: 1.2em;
+  color: #406d6d;
 }
 
-.hero {
-  height: 60vh;
-  background-image: url('your-moonlit-background.jpg');
-  background-size: cover;
-  background-position: center;
+/* 🌠 Coming Soon Image
+   Centered and responsive for visual storytelling. */
+.coming-soon img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 30px auto;
 }
 
-nav {
-  background-color: rgba(11, 28, 44, 0.8);
-  padding: 1rem 0;
+/* 💌 Newsletter Section
+   A soft, welcoming space for connection and community. */
+.newsletter-section {
   text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e6f2f2;
+  border-radius: 8px;
+}
+
+/* ✨ Ritual Quotes & Affirmations
+   Great Vibes adds handwritten warmth to sacred text. */
+.ritual-quote, blockquote {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.4em;
+  color: #406d6d;
+  margin: 20px 0;
+}
+
+/* 🧭 Navigation Bar
+   Montserrat keeps things clean, modern, and accessible. */
+footer {
+  margin-top: 60px;
+  background-color: #1d314f;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.nav-bar {
+  margin: 0;
 }
 
 .nav-menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-flex;
-  gap: 1.5rem;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .nav-menu a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #dcdcdc;
   text-decoration: none;
-  color: #fff;
-  font-family: 'Helvetica', sans-serif;
-  text-transform: uppercase;
+  font-size: 1em;
+  transition: color 0.3s ease;
 }
 
-/* Coming Soon image styling */
-.coming-soon {
-  text-align: center;
-  margin-top: 3rem;
-  padding: 1rem;
+.nav-menu a:hover {
+  color: #ffffff;
 }
 
-.coming-soon img {
-  max-width: 400px;
-  width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+/* 🧵 Buttons, Labels, Inputs
+   Montserrat for clarity and UI consistency. */
+button, input, label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
-
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-
