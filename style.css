@@ -85,7 +85,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Lora", serif;
-    background-color: #e8ecef;
+    background-color: #122231;
     overflow-x: hidden; /* prevent sideways scroll */
 }
 
@@ -170,3 +170,4 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
+
