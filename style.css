@@ -1,192 +1,107 @@
-/* ============================================================
-   🌑 1. CUSTOM FONTS
-   ============================================================ */
-
-/* Cinzel Decorative – Bold */
+/* ---------------------------------------------------
+   1. FONTS
+--------------------------------------------------- */
 @font-face {
-    font-family: 'CinzelDecorative';
-    src: url('fonts/CinzelDecorative-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
+  font-family: 'MoonlitHeader';
+  src: url('fonts/CinzelDecorative-Bold.ttf') format('truetype');
 }
-
-/* Great Vibes */
-@font-face {
-    font-family: 'GreatVibes';
-    src: url('fonts/GreatVibes-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Lora – Regular */
-@font-face {
-    font-family: 'Lora';
-    src: url('fonts/Lora-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Lora – Bold */
-@font-face {
-    font-family: 'Lora';
-    src: url('fonts/Lora-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-/* Montserrat – Regular */
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Montserrat – SemiBold */
-@font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-/* Force Montserrat inside Zoho form */
-#customForm * {
-    font-family: 'Montserrat', sans-serif !important;
-}
-
-
-/* ============================================================
-   🌕 2. BASE PAGE LAYOUT
-   Non-scrolling centered landing page
-   ============================================================ */
 
 body {
-    margin: 0;
-    padding: 0;
-
-    height: 100vh;         /* full screen height */
-    overflow: hidden;      /* prevent scrolling */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: #f2f0ed;
-    font-family: 'Lora', serif;
-    color: #333;
-    line-height: 1.6;
-    text-align: center;
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: #e8ecef;
+  color: #333;
+  text-align: center;
 }
 
-/* This wrapper holds the ENTIRE landing page */
+/* ---------------------------------------------------
+   2. LANDING PAGE (top hero section)
+--------------------------------------------------- */
 .landing-page {
-    width: 100%;
-    max-width: 900px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    padding: 20px;
+  height: 100vh;              /* FULL SCREEN */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #e8ecef;  /* matches the rest of your page */
 }
 
-
-/* ============================================================
-   🔮 3. HEADER + BRANDING
-   ============================================================ */
-
-header h1.logo {
-    font-family: 'CinzelDecorative', serif;
-    font-weight: 700;
-    font-size: 2.8em;
-    color: #1d314f;
-    margin: 0 0 10px 0;
+/* ---------------------------------------------------
+   3. PAGE WRAPPER (everything below the hero)
+--------------------------------------------------- */
+.page-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 10px;
 }
 
-.tagline p {
-    font-family: 'GreatVibes', cursive;
-    font-size: 1.5em;
-    color: #406d6d;
-    margin: 0 0 10px 0;
+/* ---------------------------------------------------
+   4. HEADER (logo + tagline + legacy note)
+--------------------------------------------------- */
+header {
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 42px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-family: 'Great Vibes', cursive;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .legacy-note {
-    font-family: 'Lora', serif;
-    font-size: 1.1em;
-    font-style: italic;
-    color: #444;
-    margin-top: 10px;
+  font-size: 15px;
+  font-style: italic;
+  color: #555;
 }
 
-
-/* ============================================================
-   🌙 4. IMAGE SECTION
-   ============================================================ */
+/* ---------------------------------------------------
+   5. COMING SOON BLOCK (image + newsletter form)
+--------------------------------------------------- */
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;              /* spacing between image and form */
+  margin-top: 20px;
+}
 
 .coming-soon img {
-    max-width: 70%;
-    height: auto;
-    margin: 25px auto;
-    display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 8px;
 }
 
-
-/* ============================================================
-   💌 5. NEWSLETTER SECTION
-   ============================================================ */
-
-.newsletter-section {
-    background-color: #e6f2f2;
-    padding: 25px;
-    border-radius: 10px;
-
-    width: 100%;
-    max-width: 600px;
-
-    box-sizing: border-box;
-    margin: 20px auto 30px;
-}
-
-/* Zoho inputs + buttons */
-button, input, label {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-}
-
-
-/* ============================================================
-   🧭 6. FOOTER NAVIGATION
-   ============================================================ */
-
+/* ---------------------------------------------------
+   6. FOOTER NAVIGATION
+--------------------------------------------------- */
 footer {
-    background-color: #1d314f;
-    padding: 20px 0;
-    width: 100%;
-    border-radius: 6px;
+  background-color: #1d314f;
+  padding: 20px 0;
+  margin-top: 50px;
 }
 
 .nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-menu li {
-    display: inline-block;
-    margin: 0 15px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-menu a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #dcdcdc;
-    text-decoration: none;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a:hover {
-    color: #ffffff;
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
 }
