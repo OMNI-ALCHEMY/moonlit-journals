@@ -51,7 +51,7 @@ body {
   font-size: 1em;
   line-height: 1.6; /* Increased for accessibility and emotional spaciousness */
   color: #333;
-  background-color: #f2f0ed; /* soft grey */
+  background-color: #122231; /* dark navy blue */
 }
 /* ---------------------------------------------------
    1. BACKGROUND HERO (Landing Page)
@@ -170,4 +170,5 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }
+
 
