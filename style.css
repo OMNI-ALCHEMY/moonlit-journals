@@ -1,107 +1,125 @@
 /* ---------------------------------------------------
-   1. FONTS
+   1. BACKGROUND HERO (Landing Page)
 --------------------------------------------------- */
-@font-face {
-  font-family: 'MoonlitHeader';
-  src: url('fonts/CinzelDecorative-Bold.ttf') format('truetype');
+
+.landing-page {
+    height: 100vh; /* full screen */
+    width: 100%;
+    background-image: url("Copilot_20250926_103959.png"); /* your coming-soon image */
+    background-size: cover;       /* fills entire screen */
+    background-position: center;  /* centers image focal point */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+/* overlay content so it sits ON TOP of image */
+.landing-content {
+    background: rgba(0, 0, 0, 0.45); /* optional soft overlay */
+    padding: 30px 40px;
+    border-radius: 12px;
+}
+
+
+
+/* ---------------------------------------------------
+   2. BODY BASE
+--------------------------------------------------- */
 
 body {
-  margin: 0;
-  font-family: 'Lora', serif;
-  background-color: #e8ecef;
-  color: #333;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", serif;
+    background-color: #e8ecef;
+    overflow-x: hidden; /* prevent sideways scroll */
 }
 
-/* ---------------------------------------------------
-   2. LANDING PAGE (top hero section)
---------------------------------------------------- */
-.landing-page {
-  height: 100vh;              /* FULL SCREEN */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #e8ecef;  /* matches the rest of your page */
-}
+
 
 /* ---------------------------------------------------
-   3. PAGE WRAPPER (everything below the hero)
+   3. LOGO + TAGLINE (inside landing-page)
 --------------------------------------------------- */
-.page-wrapper {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px 10px;
-}
-
-/* ---------------------------------------------------
-   4. HEADER (logo + tagline + legacy note)
---------------------------------------------------- */
-header {
-  margin-bottom: 40px;
-}
 
 .logo {
-  font-family: "Cinzel Decorative", serif;
-  font-size: 42px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .tagline {
-  font-family: 'Great Vibes', cursive;
-  font-size: 20px;
-  margin-bottom: 5px;
+    font-family: "Great Vibes", cursive;
+    font-size: 24px;
+    color: #f1f1f1;
+    margin-top: 5px;
 }
 
 .legacy-note {
-  font-size: 15px;
-  font-style: italic;
-  color: #555;
+    color: #e0e0e0;
+    font-size: 16px;
+    font-style: italic;
 }
+
+
 
 /* ---------------------------------------------------
-   5. COMING SOON BLOCK (image + newsletter form)
+   4. PAGE WRAPPER (content BELOW hero)
 --------------------------------------------------- */
-.coming-soon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;              /* spacing between image and form */
-  margin-top: 20px;
+
+.page-wrapper {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
 }
 
-.coming-soon img {
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  border-radius: 8px;
-}
+
 
 /* ---------------------------------------------------
-   6. FOOTER NAVIGATION
+   5. ZOHO FORM FIX
 --------------------------------------------------- */
+
+/* override all the inline fonts and sizing */
+#customForm * {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+/* center the form */
+#customForm {
+    margin: 0 auto;
+}
+
+/* remove huge auto-margins from Zoho */
+.quick_form_2_css {
+    margin-top: 20px !important;
+}
+
+
+
+/* ---------------------------------------------------
+   6. FOOTER NAV
+--------------------------------------------------- */
+
 footer {
-  background-color: #1d314f;
-  padding: 20px 0;
-  margin-top: 50px;
+    background-color: #1d314f;
+    padding: 25px 0;
+    margin-top: 60px;
 }
 
 .nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
 }
 
 .nav-menu a {
-  color: #fff;
-  text-decoration: none;
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
