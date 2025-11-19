@@ -1,186 +1,192 @@
+/* ============================================================
+   🌑 1. CUSTOM FONTS
+   ============================================================ */
+
 /* Cinzel Decorative – Bold */
 @font-face {
-  font-family: 'CinzelDecorative';
-  src: url('fonts/CinzelDecorative-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'CinzelDecorative';
+    src: url('fonts/CinzelDecorative-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
-/* Great Vibes – Regular */
+/* Great Vibes */
 @font-face {
-  font-family: 'GreatVibes';
-  src: url('fonts/GreatVibes-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'GreatVibes';
+    src: url('fonts/GreatVibes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Lora – Regular */
 @font-face {
-  font-family: 'Lora';
-  src: url('fonts/Lora-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Lora';
+    src: url('fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Lora – Bold */
 @font-face {
-  font-family: 'Lora';
-  src: url('fonts/Lora-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Lora';
+    src: url('fonts/Lora-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 /* Montserrat – Regular */
 @font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* 🌿 Base Reset & Body Ritual
-   This sets the emotional tone for your entire site — calm, readable, and mythic. */
+/* Montserrat – SemiBold */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Force Montserrat inside Zoho form */
+#customForm * {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+
+/* ============================================================
+   🌕 2. BASE PAGE LAYOUT
+   Non-scrolling centered landing page
+   ============================================================ */
+
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* centers vertically */
-  font-family: 'Lora', serif; /* Reflective and warm for journal body text */
-  font-size: 1em;
-  line-height: 1.6; /* Increased for accessibility and emotional spaciousness */
-  color: #333;
-  background-color: #f2f0ed; /* soft grey */
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;         /* full screen height */
+    overflow: hidden;      /* prevent scrolling */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f2f0ed;
+    font-family: 'Lora', serif;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
 }
 
-/* 🌕 Landing Page Layout – fixed full-screen center */
+/* This wrapper holds the ENTIRE landing page */
 .landing-page {
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
 }
 
-/* 🧱 Page Wrapper
-   Contains all content and centers it like a sacred container. */
-.page-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
-/* 🌕 Header & Brand Identity
-   Cinzel anchors your mythic brand name and tagline. */
-header h1 {
-  font-family: 'CinzelDecorative', serif;
-  font-weight: 700;
-  text-align: center;
-  padding: 40px 20px 20px;
-}
+/* ============================================================
+   🔮 3. HEADER + BRANDING
+   ============================================================ */
 
-.logo {
-  font-family: 'Cinzel Decorative', serif;
-  font-size: 2.5em;
-  color: #1d314f;
-  margin-bottom: 10px;
+header h1.logo {
+    font-family: 'CinzelDecorative', serif;
+    font-weight: 700;
+    font-size: 2.8em;
+    color: #1d314f;
+    margin: 0 0 10px 0;
 }
 
 .tagline p {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.2em;
-  color: #406d6d;
+    font-family: 'GreatVibes', cursive;
+    font-size: 1.5em;
+    color: #406d6d;
+    margin: 0 0 10px 0;
 }
 
 .legacy-note {
-  font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  color: #444;
-  text-align: center;
-  margin-top: 0.5rem;
-  font-style: italic;
+    font-family: 'Lora', serif;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #444;
+    margin-top: 10px;
 }
 
-.nav-menu li a {
-  font-family: 'Montserrat', sans-serif;
-}
 
-/* 🌠 Coming Soon Image
-   Centered and responsive for visual storytelling. */
+/* ============================================================
+   🌙 4. IMAGE SECTION
+   ============================================================ */
+
 .coming-soon img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 30px auto;
+    max-width: 70%;
+    height: auto;
+    margin: 25px auto;
+    display: block;
 }
 
-/* 💌 Newsletter Section
-   A soft, welcoming space for connection and community. */
+
+/* ============================================================
+   💌 5. NEWSLETTER SECTION
+   ============================================================ */
+
 .newsletter-section {
-  text-align: center;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #e6f2f2;
-  border-radius: 8px;
+    background-color: #e6f2f2;
+    padding: 25px;
+    border-radius: 10px;
+
+    width: 100%;
+    max-width: 600px;
+
+    box-sizing: border-box;
+    margin: 20px auto 30px;
 }
 
-/* ✨ Ritual Quotes & Affirmations
-   Great Vibes adds handwritten warmth to sacred text. */
-.ritual-quote, blockquote {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.4em;
-  color: #406d6d;
-  margin: 20px 0;
+/* Zoho inputs + buttons */
+button, input, label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
-/* 🧭 Navigation Bar
-   Montserrat keeps things clean, modern, and accessible. */
+
+/* ============================================================
+   🧭 6. FOOTER NAVIGATION
+   ============================================================ */
+
 footer {
-  margin-top: 60px;
-  background-color: #1d314f;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.nav-bar {
-  margin: 0;
+    background-color: #1d314f;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 6px;
 }
 
 .nav-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-menu li {
-  display: inline-block;
-  margin: 0 15px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 .nav-menu a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: #dcdcdc;
-  text-decoration: none;
-  font-size: 1em;
-  transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #dcdcdc;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-  color: #ffffff;
-}
-
-/* 🧵 Buttons, Labels, Inputs
-   Montserrat for clarity and UI consistency. */
-button, input, label {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-}
-/* Override Zoho inline fonts */
-#customForm * {
-  font-family: 'Montserrat', sans-serif !important;
+    color: #ffffff;
 }
