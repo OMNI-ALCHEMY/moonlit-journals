@@ -1,3 +1,58 @@
+/* Cinzel Decorative – Bold */
+@font-face {
+  font-family: 'CinzelDecorative';
+  src: url('fonts/CinzelDecorative-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Great Vibes – Regular */
+@font-face {
+  font-family: 'GreatVibes';
+  src: url('fonts/GreatVibes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Lora – Regular */
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Lora – Bold */
+@font-face {
+  font-family: 'Lora';
+  src: url('fonts/Lora-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Montserrat – Regular */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 🌿 Base Reset & Body Ritual
+   This sets the emotional tone for your entire site — calm, readable, and mythic. */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centers vertically */
+  font-family: 'Lora', serif; /* Reflective and warm for journal body text */
+  font-size: 1em;
+  line-height: 1.6; /* Increased for accessibility and emotional spaciousness */
+  color: #333;
+  background-color: #f2f0ed; /* soft grey */
+}
 /* ---------------------------------------------------
    1. BACKGROUND HERO (Landing Page)
 --------------------------------------------------- */
