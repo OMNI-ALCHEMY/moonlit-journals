@@ -43,11 +43,27 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* centers vertically */
   font-family: 'Lora', serif; /* Reflective and warm for journal body text */
   font-size: 1em;
   line-height: 1.6; /* Increased for accessibility and emotional spaciousness */
   color: #333;
-  background-color: #fdfdfd;
+  background-color: #f2f0ed; /* soft grey */
+}
+
+/* 🌕 Landing Page Layout – fixed full-screen center */
+.landing-page {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 /* 🧱 Page Wrapper
