@@ -76,6 +76,8 @@ body {
 
 /* 🌌 Full-Screen Hero Section */
 .landing-page {
+    /* ... existing properties ... */
+    background-color: #050306; /* Matches the black sky in your photo */
     height: 100vh;
     width: 100vw;
     background-image: url("images/20251204_194234.jpg"); /* Or whichever filename you chose */
@@ -143,7 +145,7 @@ footer {
 }
 
 .nav-menu a {
-    color: #ffffff;
+    color: none;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -154,10 +156,11 @@ footer {
     color: #39a0a0;
 }
 .logo-container {
+    background: none; /* This removes the box */
+    padding: 0;       /* Removes extra spacing */
     display: flex;
-    flex-direction: column; /* Stacks Moonlit over Journals */
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .logo-img {
@@ -166,4 +169,9 @@ footer {
     max-width: 500px;  /* Adjust this size to fit your liking */
     object-fit: contain;
     filter: invert(1);
+}
+.text-container {
+    text-align: center; /* This centers the text inside the div */
+    margin-top: 20px;
+    width: 100%;
 }
