@@ -82,7 +82,7 @@ body {
     height: 100vh;
     width: 100vw;
 /* This shorthand combines color, image, and positioning */
-    background: #050306; url("images/20260531_210515.jpg") no-repeat 80% 50% / contain;
+    background: red url("images/20260531_210515.jpg") no-repeat 80% 50% / contain;
     background-size: contain; 
     background-position: 80% 50%; 
     background-repeat: no-repeat;
