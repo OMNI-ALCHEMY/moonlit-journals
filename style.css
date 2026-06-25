@@ -181,7 +181,8 @@ footer {
     padding: 40px;             /* Space inside the frame */
     max-width: 800px;
     margin: 0 auto;            /* Keeps it centered */
-    min-height: calc(100vh - 4px);
+    min-height: 100vh;         /* Changed from calc() to simple min-height */
+    height: auto;              /* This allows the container to grow with the text */
 }
 
 .mission-content h1 {
