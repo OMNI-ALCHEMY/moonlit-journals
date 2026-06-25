@@ -75,41 +75,27 @@ body {
 }
 
 /* 🌌 Full-Screen Hero Section */
+/* 1. Reset the landing page background */
 .landing-page {
-    /* ... existing properties ... */
-    background-color: #050306; /* Matches the black sky in your photo */
     height: 100vh;
     width: 100vw;
-    background-image: url("images/20251204_194234.jpg"); /* Or whichever filename you chose */
-    
-    /* "contain" makes the image fit without cropping, keeping it sharp */
+    background-color: #050306; /* The color you picked! */
+    background-image: url("images/20260531_210515.jpg");
     background-size: contain; 
-    
-    /* Moves the moon to the right side (80%) and centers it vertically (50%) */
     background-position: 80% 50%; 
-    
     background-repeat: no-repeat;
-    background-color: #050306; /* Matches the dark sky */
-    
     display: flex;
-    justify-content: flex-start; /* Aligns content to the left */
-    align-items: center;
-    padding-left: 10%; /* Keeps text away from the very edge */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Aligns content to the left */
+    padding-left: 10%;
 }
 
-/* Landing Content Overlay */
+/* 2. Remove the box around the logo */
 .landing-content {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 40px 60px;
-    border-radius: 12px;
-}
-
-.logo {
-    font-family: "Cinzel Decorative", serif;
-    font-size: 48px;
-    color: #ffffff;
-    margin: 0 0 10px 0;
-    letter-spacing: 2px;
+    background: none !important; /* Forces the box to disappear */
+    padding: 0 !important;
+    border-radius: 0 !important;
 }
 
 .tagline {
