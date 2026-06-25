@@ -196,3 +196,10 @@ footer {
     line-height: 1.6;
     color: #122231;            /* Deep blue text for readability */
 }
+
+.page-banner {
+    width: 100%;             /* Makes sure it fills the container */
+    max-width: 600px;        /* Limits size so it doesn't get pixelated */
+    display: block;
+    margin: 0 auto 30px auto; /* Centers it and adds space below */
+}
