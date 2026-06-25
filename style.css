@@ -79,8 +79,8 @@ body {
 .landing-page {
     height: 100vh;
     width: 100vw;
-    background-color: #050306; /* The color you picked! */
-    background-image: url("images/20260531_210515.jpg");
+/* This shorthand combines color, image, and positioning */
+    background: #050306 url("images/20260531_210515.jpg") no-repeat 80% 50% / contain;
     background-size: contain; 
     background-position: 80% 50%; 
     background-repeat: no-repeat;
