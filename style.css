@@ -1,3 +1,14 @@
+:root {
+    --moonlit-teal: #2c4a56;
+    --burnt-orange: #a8583e;
+    --creamy-white: #f5f5dc;
+}
+
+/* Example: Use them like this */
+.tagline {
+    color: var(--creamy-white);
+}
+
 /* Reset & Base */
 * {
     box-sizing: border-box;
@@ -65,17 +76,23 @@ body {
 
 /* 🌌 Full-Screen Hero Section */
 .landing-page {
-    flex: 1;
     height: 100vh;
-    width: 100%;
-    background-image: url("images/Copilot_20250926_103959.png");
-    background-size: cover;
-    background-position: center;
+    width: 100vw;
+    background-image: url("images/20251204_194234.jpg"); /* Or whichever filename you chose */
+    
+    /* "contain" makes the image fit without cropping, keeping it sharp */
+    background-size: contain; 
+    
+    /* Moves the moon to the right side (80%) and centers it vertically (50%) */
+    background-position: 80% 50%; 
+    
     background-repeat: no-repeat;
+    background-color: #0b1c2e; /* Matches the dark sky */
+    
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Aligns content to the left */
     align-items: center;
-    text-align: center;
+    padding-left: 10%; /* Keeps text away from the very edge */
 }
 
 /* Landing Content Overlay */
@@ -148,4 +165,5 @@ footer {
     width: 100%;       /* Makes it responsive */
     max-width: 500px;  /* Adjust this size to fit your liking */
     object-fit: contain;
+    filter: invert(1);
 }
