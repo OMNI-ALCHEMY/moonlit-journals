@@ -1,9 +1,8 @@
-/* Add this at the very top of your style.css */
+/* Reset & Base */
 * {
     box-sizing: border-box;
 }
 
-/* Ensure the body and html take up exactly the viewport height */
 html, body {
     height: 100%;
     margin: 0;
@@ -51,24 +50,21 @@ html, body {
   font-style: normal;
 }
 
-/* 🌿 Base Reset & Body Ritual
-   This sets the emotional tone for your entire site — calm, readable, and mythic. */
-/* ---------------------------------------------------
-   1. INTEGRATED BODY & HERO FIX
---------------------------------------------------- */
+/* 🌿 Base Body */
 body {
     margin: 0;
     padding: 0;
     font-family: "Lora", serif;
     background-color: #122231;
-    overflow: hidden; /* This kills the scroll bar completely */
-    height: 100vh;    /* Locks the page to exactly one screen height */
+    overflow: hidden;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* 🌌 Full-Screen Hero Section */
 .landing-page {
-    flex: 1; /* This forces the hero to take up all available space above the footer */
+    flex: 1;
     width: 100%;
     background-image: url("Copilot_20250926_103959.png");
     background-size: cover;
@@ -80,12 +76,61 @@ body {
     text-align: center;
 }
 
-/* ---------------------------------------------------
-   2. PINNED FOOTER
---------------------------------------------------- */
+/* Landing Content Overlay */
+.landing-content {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px 60px;
+    border-radius: 12px;
+}
+
+.logo {
+    font-family: "Cinzel Decorative", serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 0 0 10px 0;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-family: "Great Vibes", cursive;
+    font-size: 24px;
+    color: #f1f1f1;
+    margin: 5px 0;
+}
+
+.legacy-note {
+    color: #e0e0e0;
+    font-size: 16px;
+    font-style: italic;
+    margin: 10px 0 0 0;
+}
+
+/* 🌙 Transparent Footer Overlay */
 footer {
-    background-color: #1d314f;
-    padding: 20px 0;
+    background-color: rgba(29, 49, 79, 0.85);
+    padding: 15px 0;
     width: 100%;
-    flex-shrink: 0; /* Ensures the footer doesn't get squished */
+    flex-shrink: 0;
+    backdrop-filter: blur(4px);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #39a0a0;
 }
