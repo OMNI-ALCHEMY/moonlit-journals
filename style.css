@@ -136,3 +136,16 @@ footer {
 .nav-menu a:hover {
     color: #39a0a0;
 }
+.logo-container {
+    display: flex;
+    flex-direction: column; /* Stacks Moonlit over Journals */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    height: auto;
+    width: 100%;       /* Makes it responsive */
+    max-width: 500px;  /* Adjust this size to fit your liking */
+    object-fit: contain;
+}
